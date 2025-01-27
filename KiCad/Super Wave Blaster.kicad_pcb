@@ -3297,7 +3297,7 @@
 		(descr "Through hole angled pin header, 1x03, 2.54mm pitch, 6mm pin length, single row")
 		(tags "Through hole angled pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J5"
-			(at -2.875 6.0325 0)
+			(at -1.825 -1.9675 0)
 			(layer "F.SilkS")
 			(uuid "471a0e2c-56b1-4f81-9b20-7e8dab81ec10")
 			(effects
@@ -5807,6 +5807,18 @@
 		(layer "Edge.Cuts")
 		(uuid "f70da2b8-a161-4f31-a0c5-eec47dda2429")
 	)
+	(gr_text "L\n"
+		(at 141.2 77.8 90)
+		(layer "B.SilkS")
+		(uuid "3020bc9f-0414-40f5-8e8f-20271fe6f825")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "V1.0"
 		(at 153.5 75.5 0)
 		(layer "B.SilkS")
@@ -5843,6 +5855,18 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "GND"
+		(at 141.2 79 90)
+		(layer "B.SilkS")
+		(uuid "90baa05f-f6da-4196-abc8-a8c6e0811201")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "LRCK"
 		(at 128.532925 82 -90)
 		(layer "B.SilkS")
@@ -5865,6 +5889,18 @@
 				(thickness 0.15)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text "R"
+		(at 141.2 82.6 90)
+		(layer "B.SilkS")
+		(uuid "c2bb5b38-4661-4036-9539-dc470488f080")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(gr_text "-"
@@ -5927,10 +5963,34 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "R"
+		(at 141.2 83.8 90)
+		(layer "F.SilkS")
+		(uuid "5e13194e-e994-4a40-a21f-1ceb869162c2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "D"
 		(at 131.336252 81.931167 0)
 		(layer "F.SilkS")
 		(uuid "74d16049-c358-4f88-adb0-752228d7156e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "L\n"
+		(at 141.2 78.4 90)
+		(layer "F.SilkS")
+		(uuid "794d7fef-d090-4588-a2ec-59b9effefa30")
 		(effects
 			(font
 				(size 1 1)
@@ -5955,6 +6015,18 @@
 		(at 121.5 77 270)
 		(layer "F.SilkS")
 		(uuid "9902e214-3621-4e27-ba55-e83a384b3a33")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND"
+		(at 141.2 82.2 90)
+		(layer "F.SilkS")
+		(uuid "dd97fa72-46a2-444c-879a-ff068683e45d")
 		(effects
 			(font
 				(size 1 1)
@@ -8749,5 +8821,9 @@
 				(xy 135.631163 64.9255) (xy 137.424314 64.9255)
 			)
 		)
+	)
+	(group ""
+		(uuid "84a74d07-5482-4a77-90fc-9e3490f5061b")
+		(members "42034cbc-0ffb-4fd6-b72a-2bd17f854c85" "5ac7d301-2f4e-4365-9d49-d97b426bce7d")
 	)
 )
