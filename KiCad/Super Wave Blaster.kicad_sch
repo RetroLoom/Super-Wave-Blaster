@@ -2653,6 +2653,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Linear:TLV73333PDBV"
 			(pin_names
 				(offset 0.254)
@@ -3500,6 +3621,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 138.43) (xy 228.6 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2db343b2-e925-48d9-a1d7-16049a00df29")
+	)
+	(wire
+		(pts
 			(xy 186.69 78.74) (xy 186.69 81.28)
 		)
 		(stroke
@@ -3820,6 +3951,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 149.86) (xy 228.6 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e0f222c-4430-4902-a7e8-6459435747be")
+	)
+	(wire
+		(pts
 			(xy 186.69 120.65) (xy 196.85 120.65)
 		)
 		(stroke
@@ -3857,6 +3998,16 @@
 			(type default)
 		)
 		(uuid "a506db6f-b7d7-4ff0-83fd-693ea705f77e")
+	)
+	(wire
+		(pts
+			(xy 228.6 149.86) (xy 228.6 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5c53a6f-f44e-4035-8e39-ce5fd875b23c")
 	)
 	(wire
 		(pts
@@ -3917,6 +4068,16 @@
 			(type default)
 		)
 		(uuid "c00291c9-7f91-4ba0-b463-42fe395b3614")
+	)
+	(wire
+		(pts
+			(xy 228.6 146.05) (xy 227.33 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c511c635-9b66-484d-97a3-04ca6bc856c4")
 	)
 	(wire
 		(pts
@@ -4040,6 +4201,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 143.51) (xy 227.33 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd74f6b6-2fe2-42ee-bf66-397736bb3053")
+	)
+	(wire
+		(pts
 			(xy 189.23 83.82) (xy 185.42 83.82)
 		)
 		(stroke
@@ -4137,6 +4308,16 @@
 			(type default)
 		)
 		(uuid "f2f2fc19-8b50-4eb9-8494-2011c4b8aae9")
+	)
+	(wire
+		(pts
+			(xy 228.6 138.43) (xy 228.6 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcf8462e-0890-41b0-b261-b5a4ee01451e")
 	)
 	(global_label "AUDIO_R"
 		(shape output)
@@ -4556,6 +4737,28 @@
 			)
 		)
 	)
+	(global_label "AUDIO_L"
+		(shape input)
+		(at 246.38 149.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9ebcf45d-7935-483a-bc7e-527a7388b46b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.9853 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "AUDIO_R"
 		(shape input)
 		(at 227.33 115.57 0)
@@ -4591,6 +4794,28 @@
 		(uuid "b67eba36-3991-4082-a0a5-05fa92405d62")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 210.0973 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AUDIO_R"
+		(shape input)
+		(at 246.38 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba4022c1-d74c-4642-a64d-9f4ca4565603")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.2272 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4705,6 +4930,75 @@
 			(project "S-Wave-DAC"
 				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 242.57 138.43 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a9484a6-90a3-4086-b0b0-1723c71fabbc")
+		(property "Reference" "C8"
+			(at 241.3 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uf"
+			(at 237.744 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 238.76 139.3952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8927cb9c-1013-40ae-9e3b-8c4b639f1874")
+		)
+		(pin "2"
+			(uuid "de69f204-46fa-403c-a89b-61ca36e52ab7")
+		)
+		(instances
+			(project "Super Wave Blaster"
+				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -4977,6 +5271,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 234.95 149.86 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b87ed31-b568-4faf-b9a0-8a1b3a37355a")
+		(property "Reference" "R1"
+			(at 234.95 147.574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24k"
+			(at 234.95 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 234.95 148.082 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 234.95 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cac1229a-abba-48e9-99b8-7c783668d2e7")
+		)
+		(pin "2"
+			(uuid "6160dd93-d585-4c72-b75c-f4bc2285617b")
+		)
+		(instances
+			(project ""
+				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 242.57 149.86 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ba5ea07-9b94-4475-9c2f-94a40ef1a3b0")
+		(property "Reference" "C5"
+			(at 241.3 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uf"
+			(at 237.744 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 238.76 150.8252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b13285c7-c0b5-44d0-9240-964e5ca2fbaf")
+		)
+		(pin "2"
+			(uuid "de88e52b-e25e-4bba-8c99-09be992aac57")
+		)
+		(instances
+			(project "Super Wave Blaster"
+				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 234.95 128.27 90)
 		(unit 1)
@@ -5128,7 +5558,7 @@
 				)
 			)
 		)
-		(property "Value" "Audio_Out"
+		(property "Value" "Audio_Jack"
 			(at 222.885 107.95 0)
 			(effects
 				(font
@@ -6678,6 +7108,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 234.95 138.43 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aae4678f-b1fc-46bd-91a7-edb035f4eb6c")
+		(property "Reference" "R2"
+			(at 234.95 136.144 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24k"
+			(at 234.95 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 234.95 136.652 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 234.95 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71392d6a-3f1e-469f-9907-5fbe80919192")
+		)
+		(pin "2"
+			(uuid "88ea752e-bf3a-46eb-9a81-8b485c24a721")
+		)
+		(instances
+			(project "Super Wave Blaster"
+				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 96.52 87.63 270)
 		(unit 1)
@@ -7397,6 +7894,74 @@
 			(project "S-Wave-DAC"
 				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 222.25 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e036f281-0e9e-4c99-b8a1-b84f3f4322c1")
+		(property "Reference" "J7"
+			(at 222.885 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Audio Out"
+			(at 222.885 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+			(at 222.25 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de7f980b-c80f-4200-a764-ea1f03695ca7")
+		)
+		(pin "2"
+			(uuid "ba63fd6a-ec82-44e1-9b0f-cb480a8c688c")
+		)
+		(instances
+			(project "Super Wave Blaster"
+				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
+					(reference "J7")
 					(unit 1)
 				)
 			)
