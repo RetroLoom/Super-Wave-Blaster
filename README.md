@@ -20,7 +20,9 @@ https://www.aliexpress.us/item/3256806195735532.html?spm=a2g0o.order_list.order_
 https://www.amazon.com/dp/B07Q9K5MT8?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 
 ### Texas Instruments TLV2374IDR 
-Recommended for replacing the LM324 for higher fidelity audio in earlier revisions of the SNES. This might also improve the original DAC without the use of the Super Wave Blaster. This is not an option for replacing S-Mix chip in RGB+ revisions. https://www.mouser.com/ProductDetail/595-TLV2374IDR
+Recommended for replacing the LM324 for higher fidelity audio in earlier revisions of the SNES. This might also improve the original DAC without the use of the Super Wave Blaster. This is not an option for replacing S-Mix chip in RGB+ revisions. 
+
+https://www.mouser.com/ProductDetail/595-TLV2374IDR
 
 ### PJ-392 Audio Jack Variation
 Required for mounting the Super Wave Blaster with RF modulator replacement integration. This jack conveniently solders to 3 pin headers and allows the module to be bolt mounted to the SNES shell. These can be found in packages from AliExpress and Amazon. 
@@ -36,6 +38,7 @@ https://www.aliexpress.us/item/2255800098588607.html?spm=a2g0o.order_list.order_
 For mounting to the RF modulator footprint, standard 2.54mm pin headers that are listed in the circuit BOM can be used but might require attention to the length of the pins when soldering. The header does not sit flush with the PCB when mounted correctly using the PJ-392. This works totally fine, but using 4 pole machined round hole pin headers with a socket may have been alignment and allows for easy removing and swapping of the module if needed. (Note: This is currently untested, but assumed as working. Will confirm once headers are received.)
 
 Both male and female 4-pin sets are recommended.
+
 https://www.amazon.com/dp/B07BS126FK?ref=ppx_yo2ov_dt_b_fed_asin_title
 https://www.aliexpress.us/item/3256806486942369.html?spm=a2g0o.order_list.order_list_main.193.4fbe1802ShfGCQ&gatewayAdapt=glo2usa
 
