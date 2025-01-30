@@ -44,6 +44,8 @@ https://www.patreon.com/RetroLoom
 ## License
 The hardware portions of this repository are licensed under the CERN OHL version 2, permissive.
 
+https://ohwr.org/project/cernohl/-/wikis/uploads/819d71bea3458f71fba6cf4fb0f2de6b/cern_ohl_s_v2.txt
+
 
 
 
