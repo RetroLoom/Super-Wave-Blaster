@@ -1,9 +1,9 @@
 # Super Wave Blaster
 The Super Wave Blaster is an adapter for converting digital audio from the Super Nintendo / Famicom to I2S Digital Audio protocol for use with the PCM5102 DAC module. It can be installed as a dedicated analog output by replacing the RF modulator or as a discrete mod tapping into the SNES audio mixing opamp for output through the AV multiport cable. 
 
- <img src='images/kicad_3D.png' width=480>
-<img src='images/mounted/wave-blaster-2025-01-18-102557_005.jpeg' width=280>
-<img src='images/mounted/wave-blaster-2025-01-18-105353.jpeg' width=600>
+ <img src='Images/kicad_3D.png' width=480>
+<img src='Images/mounted/wave-blaster-2025-01-18-102557_005.jpeg' width=280>
+<img src='Images/mounted/wave-blaster-2025-01-18-105353.jpeg' width=600>
 
 ## Audio Mixing Circuit
 The original audio mixing circuit in the SNES can have a huge impact on the quality of the sound. For the earlier models, a LM324 opamp is used to combine the audio channels of the DSP, cartridge, and expansion port into one stereo / mono output for the AV multiport and RF module. However, the LM324 is a general purpose opamp and not designed for audio. In my testing this opamp can roll off much of the high frequencies of the audio, even affecting the original DAC. For this reason I recommend replacing the LM324 with a TI TLV2374IDR if using the Super Wave Blaster in the AV multiport circuit. This replacement is not a requirement for this mod, but I found most of the benefits of the Super Wave Blaster are negated when using the original LM324. This does not affect the sound if using the Super Wave Blaster dedicated audio output when replacing the RF modulator. 
