@@ -11,7 +11,13 @@ The original audio mixing circuit in the SNES can have a huge impact on the qual
 The RGB and later revisions of the SNES replaced the LM324 with a proprietary IC called the S-Mix chip. This chip is not pin compatible with the LM324 so it cannot be swapped with the TLV2374IDR. Testing is still being done with this audio circuit to determine whether it should be replaced or not. For the purest sound on these later models it is recommended to use the dedicated audio jack of the Super Wave Blaster and replacing the RF modulator. Some external projects have already been built to replace the S-Mix with more off the shelf opamps, but this might benefit from adaption for the scope of this project. 
 
 ## Bill of Materials
-Please refer to the BOM CSV file included in the release section for any main circuit board components. There are additional parts that need to be used depending on the integration method used. 
+Please refer to the BOM CSV file included in the release section for any main circuit board components. There are additional parts that need to be used depending on the integration method used. All links provided below are for example sources.
+
+### GY-PCM5102
+This module is required and contains the main audio DAC. 
+
+https://www.aliexpress.us/item/3256806195735532.html?spm=a2g0o.order_list.order_list_main.11.6fde1802Z6ukMr&gatewayAdapt=glo2usa
+https://www.amazon.com/dp/B07Q9K5MT8?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 
 ### Texas Instruments TLV2374IDR 
 Recommended for replacing the LM324 for higher fidelity audio in earlier revisions of the SNES. This might also improve the original DAC without the use of the Super Wave Blaster. This is not an option for replacing S-Mix chip in RGB+ revisions. https://www.mouser.com/ProductDetail/595-TLV2374IDR
@@ -22,7 +28,7 @@ Required for mounting the Super Wave Blaster with RF modulator replacement integ
 https://www.aliexpress.us/item/3256806131431383.html?spm=a2g0o.order_list.order_list_main.131.4fbe1802ShfGCQ&gatewayAdapt=glo2usa
 
 ### M6 x 12 x 1 Washer
-A washer is required to tightly fasten the PJ-392 to the shell.
+A washer is required to tightly mount the PJ-392 to the shell.
 
 https://www.aliexpress.us/item/2255800098588607.html?spm=a2g0o.order_list.order_list_main.95.4fbe1802ShfGCQ&gatewayAdapt=glo2usa
 
@@ -30,7 +36,7 @@ https://www.aliexpress.us/item/2255800098588607.html?spm=a2g0o.order_list.order_
 For mounting to the RF modulator footprint, standard 2.54mm pin headers that are listed in the circuit BOM can be used but might require attention to the length of the pins when soldering. The header does not sit flush with the PCB when mounted correctly using the PJ-392. This works totally fine, but using 4 pole machined round hole pin headers with a socket may have been alignment and allows for easy removing and swapping of the module if needed. (Note: This is currently untested, but assumed as working. Will confirm once headers are received.)
 
 Both male and female 4-pin sets are recommended.
-
+https://www.amazon.com/dp/B07BS126FK?ref=ppx_yo2ov_dt_b_fed_asin_title
 https://www.aliexpress.us/item/3256806486942369.html?spm=a2g0o.order_list.order_list_main.193.4fbe1802ShfGCQ&gatewayAdapt=glo2usa
 
 ### Other
