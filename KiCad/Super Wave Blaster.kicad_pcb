@@ -7235,7 +7235,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "V1.11"
+	(gr_text "V1.2"
 		(at 153.5 75.5 0)
 		(layer "B.SilkS")
 		(uuid "3a0d2c1f-cd42-434d-bb55-44df9cf8198f")
