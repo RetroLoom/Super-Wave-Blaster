@@ -19,6 +19,8 @@ Please refer to the BOM CSV file included in the release section for any main ci
 
 Mouser: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=aabb15e1e3
 
+RGB+ / S-Mix Revision Notes: When tapping audio into the S-Mix chip, 24k gain resistors may not be enough attenuation. This circuit is still being studied for optimal performance.
+
 ## GY-PCM5102
 This module is required and contains the main audio DAC. 
 
