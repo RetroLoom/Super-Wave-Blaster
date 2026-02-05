@@ -141,7 +141,7 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 |------------|-----------|-------|---------|-----|-------|
 | R7, R8 | Resistor | **24kΩ** | 0805 | 2 | Unity gain from PCM5102A |
 | R5, R6 | Resistor | - | 0805 | 0 | **Do not populate** |
-| C15, C16 | Capacitor | 2.2nF | 0805 | 2 | Output coupling (default value) |
+| C15, C16 | Capacitor | 2.2nF | 0805 | 2 | low pass filter cap |
 | C13, C14 | Capacitor | **0.1µF, C0G/NP0** | 1206 | 2 | Final output coupling - use C0G type |
 
 #### Configuration B: S-Mix Chip
@@ -150,19 +150,11 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 
 | Designator | Component | Value | Package | Qty | Notes |
 |------------|-----------|-------|---------|-----|-------|
-| R5, R6 | Resistor | **100kΩ** | 0805 | 2 | Part of voltage divider network |
+| R5, R6 | Resistor | **100kΩ** | 0805 | 2 | low cut filter with 0.1µF coupling cap - 16.9Hz |
 | R7, R8 | Resistor | **0Ω** (optional) | 0805 | 2 | Lower output impedance |
 | C15, C16 | Capacitor | **470pF** | 0805 | 2 | **Replace default 2.2nF** |
 | C13, C14 | Capacitor | **0.1µF, C0G/NP0** | 1206 | 2 | Final output coupling - use C0G type |
-
-**Note:** For S-Mix configuration, you must also populate 10kΩ resistors on R3 and R4 (see "Optional Components" below).
-
-### Optional/Revision-Specific Components
-
-| Designator | Component | Value | Package | Notes |
-|------------|-----------|-------|---------|-------|
-| R3, R4 | Resistor | 10kΩ | 0805 | **Only for S-Mix (Config B)** - voltage divider |
-| Test Points | Various | - | 1.5mm pad | For testing/troubleshooting signals |
+| R3, R4 | Resistor | 10kΩ | 0805 | 2 | **Only for S-Mix (Config B)** - voltage divider |
 
 ### Component Quality Notes
 
