@@ -128,7 +128,7 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 | C1, C2 | Capacitor | 10µF | 0805 | 2 | Power supply filtering |
 | C3-C11 | Capacitor | 0.1µF | 0805 | 8 | Decoupling capacitors |
 | C12, C10 | Capacitor | 2.2µF | 0805 | 2 | Additional filtering |
-| R1-R4 | Resistor | 470Ω | 0805 | 4 | Series/termination resistors |
+| R1-R2 | Resistor | 470Ω | 0805 | 2 | Series/termination resistors |
 | JP1, JP2 | Solder Jumper | - | 2mm pitch | 2 | Configuration selection |
 
 ### Configuration-Specific Components
@@ -139,8 +139,9 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 
 | Designator | Component | Value | Package | Qty | Notes |
 |------------|-----------|-------|---------|-----|-------|
+| R3, R4 | Resistor | - | 0805 | 0 | **Do not populate** |
+| R5, R6 | Resistor | **100kΩ** | 0805 | 2 | low cut filter with 0.1µF coupling cap - 16.9Hz |
 | R7, R8 | Resistor | **24kΩ** | 0805 | 2 | Unity gain from PCM5102A |
-| R5, R6 | Resistor | - | 0805 | 0 | **Do not populate** |
 | C15, C16 | Capacitor | 2.2nF | 0805 | 2 | low pass filter cap |
 | C13, C14 | Capacitor | **0.1µF, C0G/NP0** | 1206 | 2 | Final output coupling - use C0G type |
 
@@ -150,11 +151,11 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 
 | Designator | Component | Value | Package | Qty | Notes |
 |------------|-----------|-------|---------|-----|-------|
-| R5, R6 | Resistor | **100kΩ** | 0805 | 2 | low cut filter with 0.1µF coupling cap - 16.9Hz |
-| R7, R8 | Resistor | **0Ω** (optional) | 0805 | 2 | Lower output impedance |
+| R1, R2 | Resistor | **20kΩ** | 0805 | 2 | **Only for S-Mix (Config B)** -voltage divider |
+| R3, R4 | Resistor | 10kΩ | 0805 | 2 | **Only for S-Mix (Config B)** - voltage divider |
+| R7, R8 | Resistor | **0Ω** (optional) | 0805 | 2 | Jumper 1 and 2 to bypass |
 | C15, C16 | Capacitor | **470pF** | 0805 | 2 | **Replace default 2.2nF** |
 | C13, C14 | Capacitor | **0.1µF, C0G/NP0** | 1206 | 2 | Final output coupling - use C0G type |
-| R3, R4 | Resistor | 10kΩ | 0805 | 2 | **Only for S-Mix (Config B)** - voltage divider |
 
 ### Component Quality Notes
 
