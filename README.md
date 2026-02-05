@@ -5,6 +5,15 @@ A hardware modification for converting 16-bit right-justified (EIAJ/SONY format)
 <img src='Images/kicad_3D.png' width=480>
 <img src='Images/DSC_1931.JPG' width=480>
 
+MDFourier Measurements comparing to TOSLINK capture. 
+<img src='Images/GPM02_MDF/DA__ALL_SNES-UN316642987-Toslink_vs_SWB_GPM02_1UF_OPA_44k_0000_AVG.png' width=480>
+
+Toslink
+<img src='Images/GPM02_MDF/Spectrograms/SP_A_SNES-UN316642987-Toslink_01SPC700.png' width=480>
+SWB
+<img src='Images/GPM02_MDF/Spectrograms/SP_B_SWB GPM02 1UF OPA 44k_01SPC700.png' width=480>
+More MDF measurements can be found in the Images directory. 
+
 ## Overview
 
 The Super Nintendo uses the UPD6376 audio DAC with a 16-bit **right-justified** digital audio format (also known as EIAJ CD-350, SONY format, or Japanese format). This format uses three serial data lines, similar to the modern I2S standard. The Super Wave Blaster converts right-justified audio to I2S using a series of inverters and bit shifters to realign the digital data stream.
@@ -92,9 +101,9 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 
 **Resistors:**
 - R3, R4: **Do not populate**
-- R7, R8: **24kΩ** (for unity gain from PCM5102A)
+- R5, R6: **24kΩ** (for unity gain from PCM5102A)
 
-**Gain Control:** Adjusted via R7/R8 and opamp feedback resistors
+**Gain Control:** Adjusted via R5/R6 and opamp feedback resistors
 
 ---
 
@@ -107,7 +116,6 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 **Resistors:**
 - R3, R4: **10kΩ**
 - R5, R6: **Do not populate**
-- R7, R8: **0Ω** (optional, for slightly lower impedance)
 
 **Capacitors:**
 - C15, C16: **470pF** (replaces default values)
@@ -140,10 +148,9 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 | Designator | Component | Value | Package | Qty | Notes |
 |------------|-----------|-------|---------|-----|-------|
 | R3, R4 | Resistor | - | 0805 | 0 | **Do not populate** |
-| R5, R6 | Resistor | **100kΩ** | 0805 | 2 | low cut filter with 0.1µF coupling cap - 16Hz |
-| R7, R8 | Resistor | **24kΩ** | 0805 | 2 | Unity gain from PCM5102A |
+| R5, R6 | Resistor | **24kΩ** | 0805 | 2 | Unity gain from PCM5102A |
 | C15, C16 | Capacitor | 2.2nF | 0805 | 2 | low pass filter cap |
-| C13, C14 | Capacitor | **0.1µF, C0G/NP0** | 1206 | 2 | Final output coupling - use C0G type |
+| C13, C14 | Capacitor | **1µF, X7R** | 0805 | 2 | Opamp input coupling |
 
 #### Configuration B: S-Mix Chip
 
@@ -153,16 +160,9 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 |------------|-----------|-------|---------|-----|-------|
 | R1, R2 | Resistor | **20kΩ** | 0805 | 2 | **Only for S-Mix (Config B)** -voltage divider |
 | R3, R4 | Resistor | 10kΩ | 0805 | 2 | **Only for S-Mix (Config B)** - voltage divider |
-| R7, R8 | Resistor | **0Ω** (optional) | 0805 | 2 | Jumper 1 and 2 to bypass |
+| R5, R6 | Resistor | **0Ω** (optional) | 0805 | 2 | Jumper 1 and 2 to bypass |
 | C15, C16 | Capacitor | **470pF** | 0805 | 2 | **Replace default 2.2nF** |
-| C13, C14 | Capacitor | **0.1µF, C0G/NP0** | 1206 | 2 | Final output coupling - use C0G type |
-
-### Component Quality Notes
-
-**Critical for Audio Quality:**
-- **C13, C14** (0.1µF output coupling): Must use **C0G (NP0)** dielectric type for lowest distortion
-- Avoid X5R/X7R types for output coupling capacitors
-- X7R is acceptable for power supply decoupling (C1-C11)
+| C13, C14 | Capacitor | **0.1µF, X7R** | 0805 | 2 | S-Mix input coupling |
 
 **All Resistors:**
 - Size: 0805 (2012 metric)
@@ -207,7 +207,7 @@ Since the Super Wave Blaster is a general-purpose **16-bit right-justified to I2
 
 **Audio too quiet:**
 - LM324/OPA users: Verify JP1/JP2 are open
-- Check R7/R8 values (24kΩ for unity gain)
+- Check R5/R6 values (24kΩ for unity gain)
 
 ## Contributing
 

@@ -2835,7 +2835,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "LM324: R3 R4 = Open\nS-Mix: R1 R2 = 20k, C15 C16 = 470pf, R5 R6 = Open, R7 R8 = Empty, JP1 JP2 = Closed"
+	(text "LM324: R3 R4 = Open\nS-Mix: R1 R2 = 20k, C15 C16 = 470pf, R5 R6 = Empty, JP1 JP2 = Closed"
 		(exclude_from_sim no)
 		(at 238.506 25.654 0)
 		(effects
@@ -2844,12 +2844,6 @@
 			)
 		)
 		(uuid "e7602a84-e1ab-4b1b-a887-f9b564d5310a")
-	)
-	(junction
-		(at 246.38 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "030ef7a5-17d5-4715-8f02-702eee3c526c")
 	)
 	(junction
 		(at 49.53 34.29)
@@ -2904,12 +2898,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "357ea7a4-a5c7-47e8-a67d-bc0b7bd1aad0")
-	)
-	(junction
-		(at 246.38 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4484fecc-37c0-4bf9-8777-36db02158c6e")
 	)
 	(junction
 		(at 257.81 52.07)
@@ -2978,12 +2966,6 @@
 		(uuid "8dd77a8a-6995-47a1-a126-4dc0cac3a1f5")
 	)
 	(junction
-		(at 246.38 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e778de0-3bdd-484f-b03f-c70e134c4ec7")
-	)
-	(junction
 		(at 250.19 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3030,12 +3012,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba428d28-fd1e-4504-90cd-fddaad389731")
-	)
-	(junction
-		(at 246.38 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc231c48-cd7c-4d23-9dd4-f3e82f72e2bb")
 	)
 	(junction
 		(at 181.61 57.15)
@@ -3154,16 +3130,6 @@
 			(type default)
 		)
 		(uuid "012e2a5c-faf9-4f55-97fd-8af99ef487eb")
-	)
-	(wire
-		(pts
-			(xy 243.84 44.45) (xy 246.38 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "054ab77d-12d9-48dc-a075-a0d9be043fd1")
 	)
 	(wire
 		(pts
@@ -3317,7 +3283,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 35.56) (xy 246.38 36.83)
+			(xy 226.06 35.56) (xy 226.06 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3347,7 +3313,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 52.07) (xy 246.38 52.07)
+			(xy 243.84 52.07) (xy 250.19 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3497,7 +3463,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 44.45) (xy 250.19 44.45)
+			(xy 243.84 44.45) (xy 250.19 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3917,16 +3883,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 36.83) (xy 246.38 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3995d77-ddef-4174-9a17-d26a0eebe2c8")
-	)
-	(wire
-		(pts
 			(xy 57.15 111.76) (xy 57.15 109.22)
 		)
 		(stroke
@@ -4014,16 +3970,6 @@
 			(type default)
 		)
 		(uuid "b14d1527-35e8-40db-bcfb-95b891baa632")
-	)
-	(wire
-		(pts
-			(xy 226.06 59.69) (xy 246.38 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5bd8806-7635-4570-9740-7e694537672e")
 	)
 	(wire
 		(pts
@@ -4297,7 +4243,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 59.69) (xy 246.38 62.23)
+			(xy 226.06 59.69) (xy 226.06 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4354,16 +4300,6 @@
 			(type default)
 		)
 		(uuid "ea619d37-66e6-4cc4-bcd6-abd686ad0c89")
-	)
-	(wire
-		(pts
-			(xy 246.38 52.07) (xy 250.19 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec3ccfe0-82d4-46a7-82b7-582938626032")
 	)
 	(wire
 		(pts
@@ -5069,7 +5005,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "1uF"
 			(at 233.426 50.8 90)
 			(effects
 				(font
@@ -5078,7 +5014,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 236.22 53.0352 0)
 			(effects
 				(font
@@ -5330,7 +5266,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "159a2519-cdec-4035-a15c-6abf91712cb2")
-		(property "Reference" "R7"
+		(property "Reference" "R5"
 			(at 254 49.784 90)
 			(effects
 				(font
@@ -5382,7 +5318,7 @@
 		(instances
 			(project "Super Wave Blaster"
 				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
-					(reference "R7")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5720,73 +5656,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 246.38 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2b87ed31-b568-4faf-b9a0-8a1b3a37355a")
-		(property "Reference" "R6"
-			(at 244.094 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 246.38 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 244.602 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 246.38 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cac1229a-abba-48e9-99b8-7c783668d2e7")
-		)
-		(pin "2"
-			(uuid "6160dd93-d585-4c72-b75c-f4bc2285617b")
-		)
-		(instances
-			(project ""
-				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 240.03 44.45 270)
 		(unit 1)
@@ -5804,7 +5673,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "1uF"
 			(at 233.426 43.18 90)
 			(effects
 				(font
@@ -5813,7 +5682,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 236.22 45.4152 0)
 			(effects
 				(font
@@ -5864,7 +5733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2cde7a8d-3120-4277-b4f7-772c86b24c57")
-		(property "Reference" "R8"
+		(property "Reference" "R6"
 			(at 254 42.164 90)
 			(effects
 				(font
@@ -5916,7 +5785,7 @@
 		(instances
 			(project "Super Wave Blaster"
 				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
-					(reference "R8")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8391,73 +8260,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 246.38 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aae4678f-b1fc-46bd-91a7-edb035f4eb6c")
-		(property "Reference" "R5"
-			(at 244.094 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 246.38 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 244.602 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 246.38 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "71392d6a-3f1e-469f-9907-5fbe80919192")
-		)
-		(pin "2"
-			(uuid "88ea752e-bf3a-46eb-9a81-8b485c24a721")
-		)
-		(instances
-			(project "Super Wave Blaster"
-				(path "/a781822e-a133-40a7-b35d-245c79924aaa"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 43.18 68.58 270)
 		(unit 1)
@@ -9028,7 +8830,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 246.38 62.23 0)
+		(at 226.06 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9036,7 +8838,7 @@
 		(dnp no)
 		(uuid "bea5e552-f162-4562-af1e-3c6e1848b725")
 		(property "Reference" "#PWR01"
-			(at 246.38 68.58 0)
+			(at 226.06 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9045,7 +8847,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 246.38 65.786 0)
+			(at 226.06 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9053,7 +8855,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 62.23 0)
+			(at 226.06 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9062,7 +8864,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 62.23 0)
+			(at 226.06 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9071,7 +8873,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 246.38 62.23 0)
+			(at 226.06 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9638,7 +9440,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 246.38 35.56 180)
+		(at 226.06 35.56 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9646,7 +9448,7 @@
 		(dnp no)
 		(uuid "e5952aed-13a3-41a3-a437-bb78732e5aa3")
 		(property "Reference" "#PWR037"
-			(at 246.38 29.21 0)
+			(at 226.06 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9655,7 +9457,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 246.38 32.004 0)
+			(at 226.06 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9663,7 +9465,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 35.56 0)
+			(at 226.06 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9672,7 +9474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 35.56 0)
+			(at 226.06 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9681,7 +9483,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 246.38 35.56 0)
+			(at 226.06 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
