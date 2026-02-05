@@ -140,7 +140,7 @@ The DAC module configuration depends on your SNES revision and mixing opamp choi
 | Designator | Component | Value | Package | Qty | Notes |
 |------------|-----------|-------|---------|-----|-------|
 | R3, R4 | Resistor | - | 0805 | 0 | **Do not populate** |
-| R5, R6 | Resistor | **100kΩ** | 0805 | 2 | low cut filter with 0.1µF coupling cap - 16.9Hz |
+| R5, R6 | Resistor | **100kΩ** | 0805 | 2 | low cut filter with 0.1µF coupling cap - 16Hz |
 | R7, R8 | Resistor | **24kΩ** | 0805 | 2 | Unity gain from PCM5102A |
 | C15, C16 | Capacitor | 2.2nF | 0805 | 2 | low pass filter cap |
 | C13, C14 | Capacitor | **0.1µF, C0G/NP0** | 1206 | 2 | Final output coupling - use C0G type |
