@@ -5,13 +5,18 @@ A hardware modification for converting 16-bit right-justified (EIAJ/SONY format)
 <img src='Images/kicad_3D.png' width=480>
 <img src='Images/DSC_1931.JPG' width=480>
 
-MDFourier Measurements comparing to TOSLINK capture. 
+
+***MDFourier Measurements comparing to TOSLINK capture***
 <img src='Images/GPM02_MDF/DA__ALL_SNES-UN316642987-Toslink_vs_SWB_GPM02_1UF_OPA_44k_0000_AVG.png' width=480>
 
-Toslink
+**Toslink**
+
 <img src='Images/GPM02_MDF/Spectrograms/SP_A_SNES-UN316642987-Toslink_01SPC700.png' width=480>
-SWB
+
+**SWB**
+
 <img src='Images/GPM02_MDF/Spectrograms/SP_B_SWB GPM02 1UF OPA 44k_01SPC700.png' width=480>
+
 More MDF measurements can be found in the Images directory. 
 
 ## Overview
